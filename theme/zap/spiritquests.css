@@ -1,0 +1,16 @@
+/* Header covers for spiritquest (sub)pages */
+.parent-page__spiritquests .notion-header__cover {
+    max-height: 33vh!important;
+    height: 33vh!important;
+}
+
+/* OpenCollective Embeds */
+/* spiritquests/mt-shasta - opencollective event embed */
+#block-cf821df598804d8cb7ee58bd2b6656f0 .notion-embed__content div:first-of-type {
+    height: 1033px!important;
+}
+
+/* spiritquests/chaco-canyon - opencollective event embed */
+#block-b86e89a006b746a987f8ac3359cf539f .notion-embed__content div:first-of-type {
+    height: 1033px!important;
+}
