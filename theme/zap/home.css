@@ -81,8 +81,12 @@
  */
 /* HIDE these Root Page link blocks */
 #block-0fb3cce128434178a252db82b48a77b3 .notion-callout__icon,
-#block-four-directions-spiritquests, a#block-donate, a#block-spiritquests,
-#block-ba6f384727d94c7d843e84294198edc9, a#block-terms-of-use, a#block-privacy-policy, a#block-cookie-policy {
+#block-four-directions-spiritquests,
+a#block-donate, a#block-spiritquests,
+#block-ba6f384727d94c7d843e84294198edc9,
+a#block-terms-of-use, a#block-privacy-policy,
+a#block-cookie-policy, #block-mission,
+#block-contact {
     display: none!important;
 }
 /* Top title */

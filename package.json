@@ -1,0 +1,23 @@
+{
+    "name": "tol-super-notion",
+    "private": true,
+    "description": "Super Code for the ToL Notion Site",
+    "version": "1.1.1",
+    "author": "@tree-of-light",
+    "license": "UNLICENSED",
+    "dependencies": {
+      "eslint-import-resolver-alias": "^1.1.2",
+      "eslint-loader": "^4.0.2",
+    },
+    "devDependencies": {
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-prettier": "^4.0.0",
+      "prettier": "^2.6.2"
+    },
+    "scripts": {
+      "format": "prettier --write theme/**/*.{css,scss,js}",
+    }
+  }
+  
