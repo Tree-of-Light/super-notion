@@ -1,6 +1,11 @@
+#block-984c0370ad56468baa9bdee0cdf26a0e {
+  width: 253px;
+  align-self: center;
+}
+
 /* Donation embed */
 #block-facab27b9ad84ecabbeacfec87b867d9 .notion-embed__content div:first-of-type {
-    height: 1033px!important;
+  height: 1235px !important;
 }
 
 /* newsletter embed */
@@ -8,4 +13,4 @@
   #block-c05956124a684c208446770ae42582aa .notion-embed__content {
     height: 500px;
   }
- }
+}

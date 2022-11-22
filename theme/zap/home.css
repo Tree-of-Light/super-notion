@@ -1,6 +1,8 @@
 /* Primary title */
 #block-da03d2eba22544deaaeab997ccec1e3b span strong {
+    text-align: center;
     text-shadow: 1px 1px 4px #b5b3b3;
+    font-size: 2.80rem;
     font-family: 'Square Peg', cursive!important;
     text-transform: initial!important;
     color: #319197!important;
@@ -86,9 +88,10 @@ a#block-donate, a#block-spiritquests,
 #block-ba6f384727d94c7d843e84294198edc9,
 a#block-terms-of-use, a#block-privacy-policy,
 a#block-cookie-policy, #block-mission,
-#block-contact {
+#block-contact, #block-about {
     display: none!important;
 }
+
 /* Top title */
 #block-62761b56baa54c61bbe88c6b61073f80 {
     display: none!important;
