@@ -47,6 +47,7 @@
  .notion-text .notion-text__content .notion-semantic-string .link {
   color: var(--color-text-yellow) !important;
   border-bottom: 1px solid var(--color-border-dark) !important;
+  opacity: 1 !important;
 }
 
 .notion-semantic-string .link:hover, .notion-semantic-string .link:focus {
@@ -56,12 +57,15 @@
 
   .notion-semantic-string .link {
     color: var(--color-text-yellow) !important;
-    font-size: 1.2rem;
     border-bottom: 1px solid var(--color-border-dark) !important;
   }
 
   .notion-text .notion-text__content .notion-semantic-string .link:hover, .notion-text .notion-text__content .notion-semantic-string .link:focus {
     color: var(--color-text-orange) !important;
+  }
+
+  h1 .notion-semantic-string .link, h2 .notion-semantic-string .link, h3 .notion-semantic-string .link, h4 .notion-semantic-string .link {
+    color: var(--color-text-green) !important;
   }
  
  .notion-property .notion-semantic-string .date {
@@ -83,7 +87,10 @@
  }
  /* Heading based */
  .notion-heading.color-pink strong span.color-pink,
- .notion-heading.color-pink span.highlighted-color.color-pink {
+ .notion-heading.color-pink span.highlighted-color.color-pink,
+ h1.notion-heading.color-pink span.highlighted-color.color-pink strong, 
+ h2.notion-heading.color-pink span.highlighted-color.color-pink strong, 
+ h3.notion-heading.color-pink span.highlighted-color.color-pink strong {
    text-shadow: 1px 1px 4px #b5b3b3;
    font-family: 'Square Peg', cursive!important;
    text-transform: initial!important;
@@ -243,6 +250,9 @@
  }
  .super-navbar__menu-item-list .super-navbar__item:last-child:hover {
   color: var(--text-color-white) !important;
+ }
+ .super-navbar__menu, .super-navbar__menu-wrapper {
+  max-height: 555px;
  }
  
  
@@ -459,6 +469,15 @@
    border-radius: 2px;
    background: linear-gradient(130deg,#DAA605,#af002d 41.07%,#319197 76.05%);
  }
+
+ /* List of dividers to shorten */
+ #block-1ebbcd9b6aa44d4da1cd2f48f79e94c5, #block-afd9995cf9374f46b78efe9dd96031ef,
+ #block-ee5a2a3a2dbe452f9b6b902eb21b8928, #block-fd395c2c61884856971c14436bf54b1d,
+ #block-0e368e96287c4d0fa608426593010007, #block-f70416780ec144acb87a1a5a97c856bd,
+ #block-0d4cefa8abf54d8c9992df78f138f0f3, #block-144f9aac48464ff9afe8455d213a955f {
+  margin: 2vh auto 0 !important;
+  width: 18vh !important;
+ }
  
   
  /* *******************************
@@ -533,9 +552,6 @@
     position: absolute;
     margin-top: -119px;
     margin-left: 63%!important;
-  }
-  .super-navbar__menu, .super-navbar__menu-wrapper {
-    max-height: 544px;
   }
  }
  
