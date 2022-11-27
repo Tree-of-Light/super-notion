@@ -51,69 +51,81 @@
 }
 
 .notion-semantic-string .link:hover, .notion-semantic-string .link:focus {
-    color: var(--color-text-orange) !important;
-    transition: all .333s ease-in-out !important;
-  }
+  color: var(--color-text-orange) !important;
+  transition: all .333s ease-in-out !important;
+}
 
-  .notion-semantic-string .link {
-    color: var(--color-text-yellow) !important;
-    border-bottom: 1px solid var(--color-border-dark) !important;
-  }
+.notion-semantic-string .link {
+  color: var(--color-text-yellow) !important;
+  border-bottom: 1px solid var(--color-border-dark) !important;
+}
 
-  .notion-text .notion-text__content .notion-semantic-string .link:hover, .notion-text .notion-text__content .notion-semantic-string .link:focus {
-    color: var(--color-text-orange) !important;
-  }
+.notion-text .notion-text__content .notion-semantic-string .link:hover, .notion-text .notion-text__content .notion-semantic-string .link:focus {
+  color: var(--color-text-orange) !important;
+}
 
-  h1 .notion-semantic-string .link, h2 .notion-semantic-string .link, h3 .notion-semantic-string .link, h4 .notion-semantic-string .link {
-    color: var(--color-text-green) !important;
-  }
- 
- .notion-property .notion-semantic-string .date {
-   color: var(--color-text-orange);
-   text-shadow: 2px 2px 2px #fff !important;
- }
- 
- .notion-pill {
-   padding: 4px 5px 0px  !important;
-   border-radius: 4px !important;
-   text-shadow: 1px 1px 1px var(--color-bg-default) !important;
- }
- 
- /* Primary multi-color title 
-  * To use this - make sure you are using a notion heading and add the text color Pink
-  */
- .notion-heading.color-pink {
-   text-align: center !important;
- }
- /* Heading based */
- .notion-heading.color-pink strong span.color-pink,
- .notion-heading.color-pink span.highlighted-color.color-pink,
- h1.notion-heading.color-pink span.highlighted-color.color-pink strong, 
- h2.notion-heading.color-pink span.highlighted-color.color-pink strong, 
- h3.notion-heading.color-pink span.highlighted-color.color-pink strong {
-   text-shadow: 1px 1px 4px #b5b3b3;
-   font-family: 'Square Peg', cursive!important;
-   text-transform: initial!important;
-   color: #319197!important;
-   background: -webkit-linear-gradient(130deg,#DAA605,#af002d 41.07%,#319197 76.05%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   text-align: center !important;
- }
- /* Text based, small, bold */
- p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
-   text-shadow: 1px 1px 4px #b5b3b3;
-   font-family: 'Square Peg', cursive!important;
-   font-size: 2rem;
-   text-transform: initial!important;
-   color: #af002d!important;
-   background: -webkit-linear-gradient(130deg,#DAA605,#da7a05 41.07%, #af002d 76.05%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   text-align: center !important;
- }
+h1 .notion-semantic-string .link, h2 .notion-semantic-string .link, h3 .notion-semantic-string .link, h4 .notion-semantic-string .link {
+  color: var(--color-text-green) !important;
+}
+
+.notion-property .notion-semantic-string .date {
+  color: var(--color-text-orange);
+  text-shadow: 2px 2px 2px #fff !important;
+}
+
+.notion-pill {
+  padding: 4px 5px 0px  !important;
+  border-radius: 4px !important;
+  text-shadow: 1px 1px 1px var(--color-bg-default) !important;
+}
+
+/* Primary multi-color title 
+* To use this - make sure you are using a notion heading and add the text color Pink
+*/
+.notion-heading.color-pink {
+  text-align: center !important;
+}
+/* Heading based */
+.notion-heading.color-pink strong span.color-pink,
+.notion-heading.color-pink span.highlighted-color.color-pink,
+h1.notion-heading.color-pink span.highlighted-color.color-pink strong, 
+h2.notion-heading.color-pink span.highlighted-color.color-pink strong, 
+h3.notion-heading.color-pink span.highlighted-color.color-pink strong {
+  text-shadow: 1px 1px 4px #b5b3b3;
+  font-family: 'Square Peg', cursive!important;
+  text-transform: initial!important;
+  color: #319197!important;
+  background: -webkit-linear-gradient(130deg,#DAA605,#af002d 41.07%,#319197 76.05%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center !important;
+}
+/* Text based, small, bold */
+p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
+  text-shadow: 1px 1px 4px #b5b3b3;
+  font-family: 'Square Peg', cursive!important;
+  font-size: 2rem;
+  text-transform: initial!important;
+  color: #af002d!important;
+  background: -webkit-linear-gradient(130deg,#DAA605,#da7a05 41.07%, #af002d 76.05%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center !important;
+}
+
+/* Mission links that are not pages */
+#block-bc4d5491410c45aeb8cbc66ba739b2a6.notion-text .notion-text__content .notion-semantic-string .link,
+#block-eb272c39244448cbb98cfe100f3c0f39.notion-text .notion-text__content .notion-semantic-string .link,
+#block-ee2cd45477ea4e2f9bda106ccaf01fee.notion-text .notion-text__content .notion-semantic-string .link {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.notion-page > div:hover {
+  background: inherit;
+}
  
  
  /* ***************************
@@ -243,16 +255,16 @@
   white-space: nowrap;
   transition: opacity .2s ease-in-out;
   background: var(--navbar-button-background-color);
-  color: var(--text-color-white) !important;
+  color: #fff !important;
   transition: all .333s ease-in-out !important;
   border: 0 !important;
   margin: 13px 0 13px 15px;
  }
  .super-navbar__menu-item-list .super-navbar__item:last-child:hover {
-  color: var(--text-color-white) !important;
+  color: #fff !important;
  }
  .super-navbar__menu, .super-navbar__menu-wrapper {
-  max-height: 555px;
+  max-height: 600px !important;
  }
  
  
@@ -273,7 +285,6 @@
  /* Database Page Properties */
  /* Properties table for db pages */
  .notion-page__properties {
-   margin-top: 13rem !important;
    padding-top: 1rem !important;
    border-top: 2px solid rgba(218, 166, 5, 1) !important;
    position: relative;
@@ -306,11 +317,15 @@
    border-radius: 13px!important;
  }
 
- /* Newsletter embed */
- #block-c05956124a684c208446770ae42582aa .notion-embed .notion-embed__content div:nth-child(1) {
-  height: 144px;
+ /* Newsletter embed - synced block */
+ #block-7336d4c3970c47c5b3755443c8b47a48.notion-embed .notion-embed__content div:nth-child(1) {
+  height: 300px !important;
  }
- 
+
+ /* Get in touch embed - synced block */
+ #block-1d09959c04b544da8c0c3313c4e51223.notion-embed .notion-embed__content div:nth-child(1) {
+  height: 555px !important;
+ }
  
  
  /* ***************************
@@ -553,6 +568,14 @@
     margin-top: -119px;
     margin-left: 63%!important;
   }
+  /* Newsletter embed */
+  #block-7336d4c3970c47c5b3755443c8b47a48.notion-embed .notion-embed__content div:nth-child(1) {
+    height: 588px !important;
+  }
+  /* Get in touch embed - synced block */
+  #block-1d09959c04b544da8c0c3313c4e51223.notion-embed .notion-embed__content div:nth-child(1) {
+    height: 646px !important;
+  }
  }
  
  
@@ -581,8 +604,7 @@
   */
  
   /* Header covers for spiritquest (sub)pages */
- .parent-page__spiritquests .notion-header__cover {
-   max-height: 33vh!important;
-   height: 33vh!important;
+  .parent-page__spiritquests .notion-header__cover, .parent-page__events .notion-header__cover {
+   max-height: 49vh!important;
+   height: 49vh!important;
  }
- 

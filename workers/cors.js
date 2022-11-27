@@ -7,8 +7,8 @@
 // 5. Add the below code to the worker and deploy
 
 // Header constants
-const allowedOrigins = process.env.ALLOWED_ORIGINS;
-const contentPolicy = process.env.CONTENT_POLICY;
+const allowedOrigins = ALLOWED_ORIGINS;
+const contentPolicy = CONTENT_POLICY;
 const allowedMethods = "GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH"
 const allowedHeaders = "Accept, Origin, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
 const referrerPolicy = "strict-origin-when-cross-origin" // See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
