@@ -14,3 +14,14 @@
     height: 500px;
   }
 }
+
+
+#block-267dc9272c6d4f98b8995368e78bac62 {
+  background-image: url("https://treeoflight.earth//_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe22253e5-f56b-4671-b666-dc43b02cba63%2Fimages%2F27a47a5d-59e3-4d29-a66d-f2257276044a.gif&w=640&q=80");
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+#block-7141e6c4c61b4816b5426688dd8bd29f, #block-donate-four-directions {
+  display:none !important;
+}

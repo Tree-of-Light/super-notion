@@ -494,6 +494,18 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   width: 18vh !important;
  }
  
+ /* Loading bg for embeds */
+ #block-267dc9272c6d4f98b8995368e78bac62,
+ #block-51663aeb8dac48f19ee736002ecece18,
+ #block-26bea5b5ffb140e9b8d6089a384f7978,
+ #block-bc9c82fa75df4857bc74288c23306200,
+ #block-aca52c359f2d4bee8cc32ad393aefdb7,
+ #block-edb367e71f814b0b915d3485ac2d5624 {
+  background-image: url("https://treeoflight.earth//_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe22253e5-f56b-4671-b666-dc43b02cba63%2Fimages%2F27a47a5d-59e3-4d29-a66d-f2257276044a.gif&w=640&q=80");
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+ 
   
  /* *******************************
   * 8. QUERIES - Mobile Responsiveness

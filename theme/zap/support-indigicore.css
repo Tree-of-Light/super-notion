@@ -6,6 +6,10 @@
 @media only screen and (max-width: 680px) {
     #block-ef8bb525b1bb4ed9bf1de25a34914f88,
     #block-1bbe55ba53f244f7a842d7a0be82f13c .notion-embed__content .notion-embed__container__wrapper {
-        height: 12222px !important;
+        height: 9222px !important;
     }
+}
+
+#block-51663aeb8dac48f19ee736002ecece18 {
+    height: 930px !important;
 }

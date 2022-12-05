@@ -2,12 +2,12 @@
     "name": "tol-super-notion",
     "private": true,
     "description": "Super Code for the ToL Notion Site",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "author": "@tree-of-light",
     "license": "UNLICENSED",
     "dependencies": {
       "eslint-import-resolver-alias": "^1.1.2",
-      "eslint-loader": "^4.0.2",
+      "eslint-loader": "^4.0.2"
     },
     "devDependencies": {
       "eslint-config-airbnb": "^19.0.4",
