@@ -3,25 +3,41 @@
   align-self: center;
 }
 
-/* Donation embed */
-#block-facab27b9ad84ecabbeacfec87b867d9 .notion-embed__content div:first-of-type {
-  height: 1235px !important;
+#block-7141e6c4c61b4816b5426688dd8bd29f,
+#block-donate-fourdirections,
+#block-donate-guide {
+  display:none !important;
 }
 
-/* newsletter embed */
+#block-1f77fb3e59e840ce9c51c6952d40d3d3 {
+  font-size: 1.2rem;
+}
+
+#block-4b28fbf8301a4fb89eff6c5d35608b1b {
+  text-align: center;
+}
+
 @media only screen and (max-width: 680px) {
+  /* Donation embed - hide on mobile */
+  #block-267dc9272c6d4f98b8995368e78bac62 {
+    display: none !important;
+  }
+  /* newsletter embed */
   #block-c05956124a684c208446770ae42582aa .notion-embed__content {
     height: 500px;
   }
+  #block-0067f6a58a0745e1a8c55ec6c2abda0f,
+  #block-428faee6981148c89b9d7048550a321a,
+  #block-d34d168118434a67b084a5dc486695b6 {
+    display:none !important;
+  }
+  #block-fc22748fab354e7db3c82fc85b9f5479 {
+    padding-top: 0;
+  }
 }
 
-
-#block-267dc9272c6d4f98b8995368e78bac62 {
-  background-image: url("https://treeoflight.earth//_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe22253e5-f56b-4671-b666-dc43b02cba63%2Fimages%2F27a47a5d-59e3-4d29-a66d-f2257276044a.gif&w=640&q=80");
-  background-repeat:no-repeat;
-  background-position: center center;
-}
-
-#block-7141e6c4c61b4816b5426688dd8bd29f, #block-donate-four-directions {
-  display:none !important;
+@media only screen and (min-width: 680px) {
+  #block-f241d1ef1ee24233bb04ca4c030c403b {
+    display: none !important;
+  }
 }

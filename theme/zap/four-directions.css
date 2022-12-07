@@ -1,13 +1,67 @@
 
 .notion-header__title {
-    color: transparent;
-    text-shadow: none;
-  }
-  
+  color: transparent;
+  text-shadow: none;
+}
+
+#block-bc9c82fa75df4857bc74288c23306200 > iframe {
+    height: 680px !important;
+    border: 1px solid #e4e1df;
+    border-radius: 7px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+
+#page-donate-fourdirections .notion-header__cover {
+  max-height: 370px !important;
+  height: 370px !important;
+}
+
+#block-edb367e71f814b0b915d3485ac2d5624 > iframe {
+  height: 1130px !important;
+  border: 1px solid #e4e1df;
+  border-radius: 7px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+
+#block-aca52c359f2d4bee8cc32ad393aefdb7 {
+  background: none;
+}
+
+@media only screen and (max-width: 680px) {
   #block-bc9c82fa75df4857bc74288c23306200 {
-      height: 680px !important;
+    display: none !important;
   }
-  
+  #block-aca52c359f2d4bee8cc32ad393aefdb7 > iframe {
+    height: 940px;
+  }
   #block-edb367e71f814b0b915d3485ac2d5624 {
-    height: 1200px !important;
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  #block-ccca8263911d43d0baf7d19c4d2518ef {
+    display: none !important;
+  }
+} 
+
+
+/* if device has a touch screen */
+@media (any-pointer: coarse) {
+  #block-bc9c82fa75df4857bc74288c23306200 {
+    display: none !important;
+  }
+  #block-aca52c359f2d4bee8cc32ad393aefdb7 > iframe {
+    height: 940px;
+  }
+  #block-edb367e71f814b0b915d3485ac2d5624 {
+    display: none !important;
+  }
+}
+
+/* if device has no touch screen */
+  @media (any-pointer: fine) {
+    #block-ccca8263911d43d0baf7d19c4d2518ef {
+      display: none !important;
+    }
   }

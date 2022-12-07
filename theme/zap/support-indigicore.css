@@ -3,13 +3,29 @@
     height: 6222px !important;
 }
 
+#block-51663aeb8dac48f19ee736002ecece18 {
+    height: 810px !important;
+}
+
+#block-26bea5b5ffb140e9b8d6089a384f7978 > iframe {
+    border: 1px solid #e4e1df;
+    border-radius: 7px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+
 @media only screen and (max-width: 680px) {
     #block-ef8bb525b1bb4ed9bf1de25a34914f88,
     #block-1bbe55ba53f244f7a842d7a0be82f13c .notion-embed__content .notion-embed__container__wrapper {
         height: 9222px !important;
     }
-}
+    #block-51663aeb8dac48f19ee736002ecece18 {
+        display: none !important;
+    }
 
-#block-51663aeb8dac48f19ee736002ecece18 {
-    height: 930px !important;
+    #block-26bea5b5ffb140e9b8d6089a384f7978  {
+        background: none !important;
+    }
+    #block-26bea5b5ffb140e9b8d6089a384f7978 > iframe {
+        height: 1111px !important;
+    }
 }

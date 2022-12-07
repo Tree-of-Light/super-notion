@@ -379,6 +379,11 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   * 7. COMPONENTS
   * ***************************
   */
+
+  /* Givebutter */
+  .givebutter-button {
+    margin: auto;
+  }
  
  /* Turn a single line callout block into a button (Entire block is clickable) */
   .notion-callout { 
@@ -505,6 +510,14 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   background-repeat:no-repeat;
   background-position: center center;
 }
+
+/* button or element align centers */
+  #block-54915b7e96b04249b73a8b4fe68c6f2f,
+  #block-9bb1adab5256425fa2bde0f8d0ebdf85,
+  #block-82afbb099aa24e3b869bc452967df0d6,
+  #block-2287aec5d4594d2ea3675be09ab4e1dd {
+    margin: auto !important;
+  }
  
   
  /* *******************************
