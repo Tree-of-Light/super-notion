@@ -18,14 +18,19 @@
     #block-1bbe55ba53f244f7a842d7a0be82f13c .notion-embed__content .notion-embed__container__wrapper {
         height: 9222px !important;
     }
-    #block-51663aeb8dac48f19ee736002ecece18 {
+    #block-51663aeb8dac48f19ee736002ecece18,
+    #block-d34acf28942a4e6a8204ded5f04caedf {
         display: none !important;
     }
 
-    #block-26bea5b5ffb140e9b8d6089a384f7978  {
-        background: none !important;
-    }
     #block-26bea5b5ffb140e9b8d6089a384f7978 > iframe {
-        height: 1111px !important;
+        display: none !important;
+    }
+}
+
+/* if device has a touch screen */
+@media (any-pointer: coarse) {
+    #block-d34acf28942a4e6a8204ded5f04caedf {
+      display: none !important;
     }
 }

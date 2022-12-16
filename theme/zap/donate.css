@@ -13,31 +13,31 @@
   font-size: 1.2rem;
 }
 
-#block-4b28fbf8301a4fb89eff6c5d35608b1b {
+#block-4b28fbf8301a4fb89eff6c5d35608b1b,
+#block-aa86a6bd557d47cdb6a8110e507522a3 {
+  text-align: center !important;
+}
+
+#block-e2ea89d5919646439f0b835261aae218 .highlighted-background {
+  width: 100%;
+  display: block;
   text-align: center;
 }
 
+
 @media only screen and (max-width: 680px) {
   /* Donation embed - hide on mobile */
-  #block-267dc9272c6d4f98b8995368e78bac62 {
-    display: none !important;
-  }
   /* newsletter embed */
   #block-c05956124a684c208446770ae42582aa .notion-embed__content {
     height: 500px;
   }
   #block-0067f6a58a0745e1a8c55ec6c2abda0f,
   #block-428faee6981148c89b9d7048550a321a,
-  #block-d34d168118434a67b084a5dc486695b6 {
+  #block-d34d168118434a67b084a5dc486695b6,
+  #block-944cc9f679a04a56a6824b684104ed41 {
     display:none !important;
   }
   #block-fc22748fab354e7db3c82fc85b9f5479 {
     padding-top: 0;
-  }
-}
-
-@media only screen and (min-width: 680px) {
-  #block-f241d1ef1ee24233bb04ca4c030c403b {
-    display: none !important;
   }
 }

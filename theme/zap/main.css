@@ -31,6 +31,7 @@
    font-family: 'Work Sans', sans-serif!important;
    font-weight: 100;
    letter-spacing: .16393vh!important;
+   background-color: #f1ebe5 !important;
  }
  
  h1, h2, h3 {
@@ -45,23 +46,23 @@
  }
  
  .notion-text .notion-text__content .notion-semantic-string .link {
-  color: var(--color-text-yellow) !important;
+  color: var(--color-text-blue) !important;
   border-bottom: 1px solid var(--color-border-dark) !important;
   opacity: 1 !important;
 }
 
 .notion-semantic-string .link:hover, .notion-semantic-string .link:focus {
-  color: var(--color-text-orange) !important;
+  color: var(--color-text-green) !important;
   transition: all .333s ease-in-out !important;
 }
 
 .notion-semantic-string .link {
-  color: var(--color-text-yellow) !important;
+  color: var(--color-text-blue) !important;
   border-bottom: 1px solid var(--color-border-dark) !important;
 }
 
 .notion-text .notion-text__content .notion-semantic-string .link:hover, .notion-text .notion-text__content .notion-semantic-string .link:focus {
-  color: var(--color-text-orange) !important;
+  color: var(--color-text-green) !important;
 }
 
 h1 .notion-semantic-string .link, h2 .notion-semantic-string .link, h3 .notion-semantic-string .link, h4 .notion-semantic-string .link {
@@ -69,7 +70,7 @@ h1 .notion-semantic-string .link, h2 .notion-semantic-string .link, h3 .notion-s
 }
 
 .notion-property .notion-semantic-string .date {
-  color: var(--color-text-orange);
+  color: #333 !important;
   text-shadow: 2px 2px 2px #fff !important;
 }
 
@@ -82,7 +83,7 @@ h1 .notion-semantic-string .link, h2 .notion-semantic-string .link, h3 .notion-s
 /* Primary multi-color title 
 * To use this - make sure you are using a notion heading and add the text color Pink
 */
-.notion-heading.color-pink {
+.notion-heading.color-pink, #p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   text-align: center !important;
 }
 /* Heading based */
@@ -113,6 +114,7 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center !important;
+  display: block;
 }
 
 /* Mission links that are not pages */
@@ -126,8 +128,19 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
 .notion-page > div:hover {
   background: inherit;
 }
- 
- 
+
+.notion-link.notion-page {
+  color: var(--color-text-blue) !important;
+}
+#block-6d1fef9857104c95b5858cfc90382454 .notion-text .notion-link, #block-6d1fef9857104c95b5858cfc90382454 .notion-page.notion-link {
+  color: var(--color-text-yellow) !important;
+  }
+ #block-6d1fef9857104c95b5858cfc90382454 h3 .notion-link {
+   color: white !important;
+ }
+ .notion-callout.bg-gray-light .notion-link {
+   color: var(--color-text-yellow) !important;
+ }
  /* ***************************
   * 3. LAYOUT 
   * ***************************
@@ -188,7 +201,7 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
  /* Cover */
  .notion-header__cover {
    max-height: 60vh!important;
-   height: 60vh!important;
+   height: 46vh!important;
    box-shadow: 0px 20px 40px -10px rgba(222, 222, 217,0.55);
    -webkit-box-shadow: 0px 20px 40px -10px rgba(222, 222, 217,0.55);
  }
@@ -218,8 +231,8 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
  
  /* Notion Page Title */
  .notion-header__content {
-   margin-top: -52vh!important;
-   margin-bottom: 33vh!important;
+   margin-top: -42vh!important;
+   margin-bottom: 23vh!important;
  }
  
  .notion-header__title {
@@ -239,21 +252,44 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
    display: none !important;
  }
 
- /* Hide the navbar list in favor of dropdown only, like in mobile - only show first 4 links, show rest in dropdown (see below) */
- .super-navbar.simple .super-navbar__item-list a:nth-child(+n+5) {
+ /* Navbar list of links in desktop: Hide the navbar list in favor of dropdown only, like in mobile - only show first 4 links, show rest in dropdown (see below) */
+ .super-navbar.simple .super-navbar__item-list a:nth-child(+n+6) {
   display: none !important;
  }
+ /* Change the menu icon */
+.super-navbar__menu-open::after {
+  content: "Menu";
+  padding-top: 2px;
+  margin-left: 2px;
+  font-size: .999rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: initial !important;
+  color: #333 !important;
+  background: -webkit-linear-gradient(130deg,#1d575c,#1d575c 41.07%,#333 76.05%);
+    background-clip: border-box;
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
  .super-navbar__menu-open {
   display: flex !important;
+  padding-right: 0 !important;
+  transition: all .333s ease-in-out!important;
+ }
+ .super-navbar__menu-open:hover {
+  filter: hue-rotate(6.142rad);
  }
  .super-navbar__menu-item-list .super-navbar__item:last-child {
   position: relative;
   opacity: 1;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 14px 16px 12px 16px;
   cursor: pointer;
   white-space: nowrap;
   transition: opacity .2s ease-in-out;
+  transition: all .333s ease-in-out!important;
   background: var(--navbar-button-background-color);
   color: #fff !important;
   transition: all .333s ease-in-out !important;
@@ -262,9 +298,15 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
  }
  .super-navbar__menu-item-list .super-navbar__item:last-child:hover {
   color: #fff !important;
+  filter: hue-rotate(6.142rad);
+  background: var(--color-text-blue) !important; /* muct match the theme color */
  }
  .super-navbar__menu, .super-navbar__menu-wrapper {
-  max-height: 600px !important;
+  max-height: 700px !important;
+  max-width: 107rem !important;
+ }
+ .super-navbar__menu-wrapper {
+  top: 9px;
  }
  
  
@@ -327,6 +369,10 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   height: 555px !important;
  }
  
+ .notion-callout.bg-brown-light, .notion-collection-card.gallery {
+   background: #F9F7F4 !important;
+ }
+ 
  
  /* ***************************
   * 6. FOOTER 
@@ -340,37 +386,68 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
    font-weight: 100;
    font-size: 13px;
    letter-spacing: 0!important;
+   line-height: 1.2rem;
  }
  
  .super-footer__logo {
    height: 77px;
  }
+
+ /* Align the first links in the center */
+ .super-footer__links {
+  align-items: center;
+ }
  
-/* Footer policy & contact links - unstable */
+/* Footer donnate button - unstable but works - based on count of links #5 */
+.super-footer__links a.super-footer__link:nth-last-child(+5) {
+  border-radius: 9px !important;
+  padding: 12px 18px 7px 18px !important;
+  transition: all .333s ease-in-out !important;
+  position: relative;
+  opacity: 1;
+  border-radius: var(--navbar-button-border-radii);
+  padding: 8px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity .2s ease-in-out;
+  background: var(--navbar-button-background-color);
+  color: white !important;
+  border: var(--cta-border) !important;
+  box-shadow: var(--callout-shadow) !important;
+  transition: all .333s ease-in-out !important;
+  border-bottom: 3px solid transparent !important;
+}
+
+.super-footer__links a.super-footer__link:nth-last-child(+5):hover {
+  opacity: .7 !important;
+  filter: hue-rotate(1rad) !important;
+}
+
+/* Footer policy & contact links - unstable but works - based on count of last 4 links */
  .super-footer__links a.super-footer__link:nth-last-child(-n+4) {
    font-size: .6rem!important;
    color: rgba(204, 195, 176, 1)!important;
  }
  .super-footer__links a.super-footer__link:nth-last-child(+1) {
    position: absolute;
-   margin-top: 0px;
+   margin-top: -70px;
    margin-left: 79%!important;
    color: #DAA605!important;
    border-bottom: 1px #DAA605 dashed;
  }
  .super-footer__links a.super-footer__link:nth-last-child(+2) {
    position: absolute;
-   margin-top: 22px;
+   margin-top: -20px;
    margin-left: 79%!important;
  }
  .super-footer__links a.super-footer__link:nth-last-child(+3) {
    position: absolute;
-   margin-top: 44px;
+   margin-top: 23px;
    margin-left: 79%!important;
  }
  .super-footer__links a.super-footer__link:nth-last-child(+4) {
   position: absolute;
-  margin-top: 66px;
+  margin-top: 64px;
   margin-left: 79%!important;
 }
  
@@ -413,9 +490,9 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   transition: all .4s ease-in-out!important;
  }
  
- /* Turn bold text link blocks into a button */
+ /* Turn bold text link blocks into a button 
  .notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link, .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
-   padding: var(--cta-padding)!important;
+   padding: 11px 16px 8px 16px!important;
    border: var(--cta-border)!important;
    box-shadow: var(--cta-shadow)!important;
    border-radius: var(--cta-border-radius)!important;
@@ -424,9 +501,28 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
    display: inline-flex!important;
    justify-content: center!important;
    transition: all .333s ease-in-out!important;
-   font-size: 1.34rem!important;
-   /* You can change the button colors here */
-   background: #f0bd66!important;
+   font-size: 1.14rem!important;
+   background: #766B6E!important;
+   color: #ffffff!important;
+   -webkit-transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
+  -moz-transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
+  -o-transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
+  -ms-transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
+  transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
+  transition: all .4s ease-in-out!important;
+ }
+ */
+ 
+ /* turn highlighted background links into buttons */
+ .notion-root .notion-text .notion-text__content .notion-semantic-string span .highlighted-background   {
+   border: var(--cta-border)!important;
+   box-shadow: var(--cta-shadow)!important;
+   border-radius: var(--cta-border-radius)!important;
+   opacity: 1!important;
+   display: inline-flex!important;
+   justify-content: center!important;
+   transition: all .333s ease-in-out!important;
+   font-size: 1.14rem!important;
    color: #ffffff!important;
    /* effects */
    -webkit-transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
@@ -435,7 +531,18 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   -ms-transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
   transition: width .35s cubic-bezier(.46,.01,.32,1) 0s!important;
   transition: all .4s ease-in-out!important;
+  filter: saturate(393%) brightness(.98) contrast(96%);
  }
+ 
+  .notion-root .notion-text .notion-text__content .notion-semantic-string span .highlighted-background a.notion-link   {
+     font-weight: 400!important;
+      text-decoration: none !important;
+      border: none!important;
+      color: #000 !important;
+      display: inline-flex!important;
+      padding: 17px 26px 15px 26px!important;
+      justify-content: center!important;
+  }
  
  /* Button hover */
  .notion-root .notion-text p.notion-text__content span.notion-semantic-string span strong a.notion-link:hover, .notion-text p.notion-text__content span.notion-semantic-string span a.notion-link strong:hover, .notion-callout .notion-link:hover,
@@ -445,8 +552,8 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
  }
   
  a.notion-link:hover, a.notion-link:focus {
-  opacity: .7!important;
-  filter: hue-rotate(8.442rad)!important;
+  opacity: .8 !important;
+  filter: hue-rotate(1.4rad)!important;
  }
 
  .notion-link.notion-page .notion-page__title > .notion-semantic-string:last-child::after {
@@ -499,7 +606,7 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   width: 18vh !important;
  }
  
- /* Loading bg for embeds */
+ /* Loading bg for embeds
  #block-267dc9272c6d4f98b8995368e78bac62,
  #block-51663aeb8dac48f19ee736002ecece18,
  #block-26bea5b5ffb140e9b8d6089a384f7978,
@@ -510,6 +617,7 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   background-repeat:no-repeat;
   background-position: center center;
 }
+*/
 
 /* button or element align centers */
   #block-54915b7e96b04249b73a8b4fe68c6f2f,
@@ -525,14 +633,17 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
   * *******************************
   */
  @media only screen and (max-width: 680px) {
-   .notion-header__cover {
+   .notion-callout .notion-callout__content .notion-text__children {
+    margin-right: 40px !important;
+  }
+  .notion-header__cover {
      max-height: 30vh!important;
-     height: 30vh!important;
+     height: 27vh!important;
    }
   /* Notion Page Title*/
    .notion-header__content {
-     margin-top: -30vh!important;
-     margin-bottom: 10vh!important;
+     margin-top: -28vh!important;
+     margin-bottom: 11vh!important;
    }
    .notion-header__title {
      text-align: left!important;
@@ -565,6 +676,9 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
    .notion-callout.border {
      padding: 22px 16px 16px 12px !important;
    }
+   .notion-callout .notion-column-list {
+      margin-right: 20px !important;
+    }
   
    /* Footer policy & contact links - unstable */
  .super-footer__links a.super-footer__link:nth-last-child(-n+4) {
@@ -573,24 +687,24 @@ p.notion-text__content .notion-semantic-string .highlighted-color.color-pink {
  }
  .super-footer__links a.super-footer__link:nth-last-child(+1) {
    position: absolute;
-   margin-top: -180px;
+   margin-top: -450px;
    margin-left: 63.8%!important;
    color: #DAA605!important;
    border-bottom: 1px #DAA605 dashed;
  }
  .super-footer__links a.super-footer__link:nth-last-child(+2) {
    position: absolute;
-   margin-top: -158px;
+   margin-top: -397px;
    margin-left: 63%!important;
  }
  .super-footer__links a.super-footer__link:nth-last-child(+3) {
    position: absolute;
-   margin-top: -138px;
+   margin-top: -346px;
    margin-left: 63%!important;
  }
  .super-footer__links a.super-footer__link:nth-last-child(+4) {
     position: absolute;
-    margin-top: -119px;
+    margin-top: -294px;
     margin-left: 63%!important;
   }
   /* Newsletter embed */

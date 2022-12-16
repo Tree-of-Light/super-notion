@@ -1,3 +1,4 @@
+
 /* Primary title */
 #block-da03d2eba22544deaaeab997ccec1e3b span strong {
     text-align: center;
@@ -102,6 +103,15 @@ a#block-cookie-policy, #block-mission,
  * *******************************
  */
  @media only screen and (max-width: 680px) {
+    /* Hero and title */
+    .notion-header__cover {
+      max-height: 30vh!important;
+      height: 29vh!important;
+    }
+    .notion-header__title {
+      margin-top: -35vh!important;
+      margin-bottom: -9vh!important;
+    }
     #block-5811442ea79a4a8f9f0746f16f50f2f1 .notion-callout__icon {
         display: none!important;
     }

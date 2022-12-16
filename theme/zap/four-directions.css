@@ -1,7 +1,17 @@
 
 .notion-header__title {
-  color: transparent;
-  text-shadow: none;
+  color: transparent !important;
+  text-shadow: none !important;
+}
+
+#block-ce216e06e0e546ad8a459ef28ee947e6 h2,
+#block-5d26dd3d1c1544db8b2e8afbd65678c4 {
+  text-align: center !important;
+  margin: auto;
+}
+
+#block-5d26dd3d1c1544db8b2e8afbd65678c4 {
+  max-width: 111px;
 }
 
 #block-bc9c82fa75df4857bc74288c23306200 > iframe {
@@ -27,8 +37,23 @@
   background: none;
 }
 
+#block-6d24460e964445ff8a50523564994fae .notion-property.notion-property__select.property-637d3c74 span {
+  padding: 13px 18px 10px 18px !important;
+  margin-top: 30px !important;
+  margin-bottom: 15px !important;
+  font-size: .9rem !important;
+  text-transform: capitalize !important;
+}
+
+#block-6d24460e964445ff8a50523564994fae .notion-property.notion-property__select.property-63416658 span {
+  padding: 6px 8px 4px 8px !important;
+  font-size: .8rem !important;
+  text-transform: capitalize !important;
+}
+
 @media only screen and (max-width: 680px) {
-  #block-bc9c82fa75df4857bc74288c23306200 {
+  #block-bc9c82fa75df4857bc74288c23306200,
+  #block-322cd6d0ce39463580468130349fb184 {
     display: none !important;
   }
   #block-aca52c359f2d4bee8cc32ad393aefdb7 > iframe {
@@ -37,10 +62,15 @@
   #block-edb367e71f814b0b915d3485ac2d5624 {
     display: none !important;
   }
+  .notion-header__title {
+    color: transparent !important;
+    text-shadow: none !important;
+  }
 }
 
 @media only screen and (min-width: 680px) {
-  #block-ccca8263911d43d0baf7d19c4d2518ef {
+  #block-ccca8263911d43d0baf7d19c4d2518ef,
+  #block-132466a5af9d4e448f69c5bdd4ac48eb {
     display: none !important;
   }
 } 
@@ -48,7 +78,8 @@
 
 /* if device has a touch screen */
 @media (any-pointer: coarse) {
-  #block-bc9c82fa75df4857bc74288c23306200 {
+  #block-bc9c82fa75df4857bc74288c23306200,
+  #block-322cd6d0ce39463580468130349fb184 {
     display: none !important;
   }
   #block-aca52c359f2d4bee8cc32ad393aefdb7 > iframe {
